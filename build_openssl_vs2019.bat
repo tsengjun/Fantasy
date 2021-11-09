@@ -42,4 +42,3 @@ perl -pi.bak -e "s/-DNDEBUG//gi" makefile
 del /F /Q "makefile.bak" > nul
 
 nmake build_libs
-
