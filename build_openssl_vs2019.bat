@@ -7,7 +7,7 @@ call vcvars32.bat
 cd /d %CWD%
 
 :: path ::
-set path="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86";"C:\Program Files (x86)\NASM";"C:\Perl64\bin";%path%
+set path="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx86\x86";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%path%
 
 perl Configure --release VC-WIN32 no-dso no-shared threads
 perl -pi.bak -e "s/\/MT/\/MTd/gi" configdata.pm
