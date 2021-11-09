@@ -15,24 +15,12 @@ perl -pi.bak -e "s/\/O2/\/Od \/Ob0/gi" configdata.pm
 perl -pi.bak -e "s/-D\"NDEBUG\"//gi" configdata.pm
 perl -pi.bak -e "s/\"NDEBUG\",//gi" configdata.pm
 perl -pi.bak -e "s/-DNDEBUG//gi" configdata.pm
-perl -pi.bak -e "s/-DUNICODE//gi" configdata.pm
-perl -pi.bak -e "s/-D_UNICODE//gi" configdata.pm
-perl -pi.bak -e "s/-D\"UNICODE\"//gi" configdata.pm
-perl -pi.bak -e "s/-D\"_UNICODE\"//gi" configdata.pm
-perl -pi.bak -e "s/\"UNICODE\",//gi" configdata.pm
-perl -pi.bak -e "s/\"_UNICODE\",//gi" configdata.pm
 del /F /Q "configdata.pm.bak" > nul
 perl -pi.bak -e "s/\/MT/\/MTd/gi" makefile
 perl -pi.bak -e "s/\/O2/\/Od \/Ob0/gi" makefile
 perl -pi.bak -e "s/-D\"NDEBUG\"//gi" makefile
 perl -pi.bak -e "s/\"NDEBUG\",//gi" makefile
 perl -pi.bak -e "s/-DNDEBUG//gi" makefile
-perl -pi.bak -e "s/-DUNICODE//gi" makefile
-perl -pi.bak -e "s/-D_UNICODE//gi" makefile
-perl -pi.bak -e "s/-D\"UNICODE\"//gi" makefile
-perl -pi.bak -e "s/-D\"_UNICODE\"//gi" makefile
-perl -pi.bak -e "s/\"UNICODE\",//gi" makefile
-perl -pi.bak -e "s/\"_UNICODE\",//gi" makefile
 del /F /Q "makefile.bak" > nul
 
 nmake libclean
@@ -44,24 +32,12 @@ perl -pi.bak -e "s/\/O2/\/Od \/Ob0/gi" configdata.pm
 perl -pi.bak -e "s/-D\"NDEBUG\"//gi" configdata.pm
 perl -pi.bak -e "s/\"NDEBUG\",//gi" configdata.pm
 perl -pi.bak -e "s/-DNDEBUG//gi" configdata.pm
-perl -pi.bak -e "s/-DUNICODE//gi" configdata.pm
-perl -pi.bak -e "s/-D_UNICODE//gi" configdata.pm
-perl -pi.bak -e "s/-D\"UNICODE\"//gi" configdata.pm
-perl -pi.bak -e "s/-D\"_UNICODE\"//gi" configdata.pm
-perl -pi.bak -e "s/\"UNICODE\",//gi" configdata.pm
-perl -pi.bak -e "s/\"_UNICODE\",//gi" configdata.pm
 del /F /Q "configdata.pm.bak" > nul
 perl -pi.bak -e "s/\/MT/\/MTd/gi" makefile
 perl -pi.bak -e "s/\/O2/\/Od \/Ob0/gi" makefile
 perl -pi.bak -e "s/-D\"NDEBUG\"//gi" makefile
 perl -pi.bak -e "s/\"NDEBUG\",//gi" makefile
 perl -pi.bak -e "s/-DNDEBUG//gi" makefile
-perl -pi.bak -e "s/-DUNICODE//gi" makefile
-perl -pi.bak -e "s/-D_UNICODE//gi" makefile
-perl -pi.bak -e "s/-D\"UNICODE\"//gi" makefile
-perl -pi.bak -e "s/-D\"_UNICODE\"//gi" makefile
-perl -pi.bak -e "s/\"UNICODE\",//gi" makefile
-perl -pi.bak -e "s/\"_UNICODE\",//gi" makefile
 
 del /F /Q "makefile.bak" > nul
 
