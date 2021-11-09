@@ -1,4 +1,4 @@
-@echo off
+@echo on
 
 :: vcvars32.bat ::
 set CWD=%~sdp0

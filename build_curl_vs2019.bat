@@ -8,10 +8,10 @@ cd %CWD%
 set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%PATH%
 echo %PATH%
 
-cd ../
 call buildconf.bat
-cd %CWD%
 
-nmake /f Makefile.vc mode=static DEBUG=yes MACHINE=x86 GEN_PDB=yes RTLIBCFG=static
+cd winbuild
+nmake /f Makefile.vc mode=static DEBUG=yes MACHINE=x64 GEN_PDB=yes RTLIBCFG=static ENABLE_UNICODE=yes
+cd %CWD%
 
 pause
