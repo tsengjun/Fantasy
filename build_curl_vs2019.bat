@@ -5,7 +5,7 @@ cd /d "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliar
 call vcvars32.bat
 cd %CWD%
 
-set PATH=%PATH%;"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx86\x86"
+set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx86\x86";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%PATH%
 echo %PATH%
 
 cd ../
