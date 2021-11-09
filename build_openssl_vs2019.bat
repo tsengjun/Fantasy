@@ -9,7 +9,7 @@ cd /d %CWD%
 :: path ::
 set path="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%path%
 
-perl Configure --release VC-WIN64A no-dso no-shared threads
+perl Configure --debug VC-WIN64A -static no-dso no-shared threads
 perl -pi.bak -e "s/\/MT/\/MTd/gi" configdata.pm
 perl -pi.bak -e "s/\/O2/\/Od \/Ob0/gi" configdata.pm
 perl -pi.bak -e "s/-D\"NDEBUG\"//gi" configdata.pm
@@ -26,7 +26,7 @@ del /F /Q "makefile.bak" > nul
 nmake libclean
 nmake clean
 nmake distclean
-perl Configure --release VC-WIN64A no-dso no-shared threads
+perl Configure --debug VC-WIN64A -static no-dso no-shared threads
 perl -pi.bak -e "s/\/MT/\/MTd/gi" configdata.pm
 perl -pi.bak -e "s/\/O2/\/Od \/Ob0/gi" configdata.pm
 perl -pi.bak -e "s/-D\"NDEBUG\"//gi" configdata.pm
