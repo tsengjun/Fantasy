@@ -2,10 +2,10 @@
 
 set CWD=%~sdp0
 cd /d "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build"
-call vcvars32.bat
+call vcvars64.bat
 cd %CWD%
 
-set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx86\x86";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%PATH%
+set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%PATH%
 echo %PATH%
 
 cd ../
