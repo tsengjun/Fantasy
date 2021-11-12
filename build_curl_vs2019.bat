@@ -11,7 +11,7 @@ echo %PATH%
 call buildconf.bat
 
 cd winbuild
-nmake /f Makefile.vc mode=static DEBUG=yes MACHINE=x64 GEN_PDB=yes RTLIBCFG=static ENABLE_UNICODE=yes
+nmake /f Makefile.vc mode=static DEBUG=yes MACHINE=x64 GEN_PDB=yes RTLIBCFG=static ENABLE_UNICODE=yes ENABLE_IPV6=no ENABLE_SSPI=no ENABLE_SCHANNEL=no
 cd %CWD%
 
 pause
