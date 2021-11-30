@@ -1,13 +1,16 @@
 @echo on
 
-:: vcvars32.bat ::
+:: vcvars64.bat ::
 set CWD=%~sdp0
 cd /d "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build"
 call vcvars64.bat
 cd /d %CWD%
 
-:: path ::
-set path="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%path%
+:: PATH ::
+set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%PATH%
+echo %PATH%
+
+rmdir /S /Q build
 
 perl -pi.bak -e "s/disable\(\'static\',\s*\'pic\',\s*\'threads\'\)/disable\(\'pic\'\)/gi" Configure
 perl -pi.bak -e "s/disable\(\"unavailable\",\s*\'threads\'\)/disable\(\"unavailable\"\)/gi" Configure

@@ -1,5 +1,5 @@
 # Fantasy
-Fantastic build scripts for my daily used library.
+Fantastic build scripts for my daily used libraries.
 
 - CURL - master branch
 
