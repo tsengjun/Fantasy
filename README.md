@@ -13,4 +13,4 @@ Fantastic build scripts for my daily used libraries.
 
 <img src="https://avatars.githubusercontent.com/u/11430937?s=200&v=4" width="128" height="128">
 
-👌 The last validated version was based on Nov 30, 2021 codebase. 
+👌 The last validated version was based on Nov 30, 2021 codebase.
