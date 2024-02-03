@@ -10,6 +10,8 @@ cd /d %CWD%
 set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64";"C:\Program Files\NASM";"C:\Strawberry\perl\bin";%PATH%
 echo %PATH%
 
+perl -pi.bak -e "s/2\*1024\*1024/128\*1024\*1024/gi" include\libssh2.h
+
 rmdir /S /Q build
 mkdir build
 
