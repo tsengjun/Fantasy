@@ -1,7 +1,7 @@
 # Fantasy
 Fantastic build scripts for my daily used libraries.
 
-- CURL - [master branch](https://github.com/curl/curl)
+- cURL - [master branch](https://github.com/curl/curl)
 
 > <img src="https://avatars.githubusercontent.com/u/16928085?s=200&v=4" height="48">
 
